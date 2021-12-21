@@ -1,0 +1,16 @@
+.board_list{
+    width: 100px;
+    border-top: 2px solid black;
+}
+.board_list>div {
+    border-bottom: 1px solid gray
+}
+.board_list> div.top {
+    border-bottom: 1px solid #ddd;
+    display: inline;
+}
+
+
+.board_list>div>div {
+    display: inline-block;
+}

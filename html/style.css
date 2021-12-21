@@ -1,0 +1,98 @@
+html {
+    font-size: 10px;
+    font-family:'휴먼명조';
+    line-height: 1.6;
+    border: 3px solid rgb(58, 58, 170)
+}
+#column1 {
+    font-size: 15px;
+    color: rgb(204, 36, 36)
+
+}
+
+.footer {color:rgb(58, 58, 170) }
+
+div > h2 {
+    color:green
+}
+
+/* 글자와 관련된 속성 스타일도 상속이 가능한 속성이 있다. 
+
+부모 태그에서 자식 태그로 상속이 가능하다. 
+부모 태그의 속성을 지정한 경우 자식 태그들도 동일한 스타일이 적용된다. 
+    - 글자와 관련된 속성들은 상속이 가능한 대표적인 속성
+
+
+- 중요한 것은 selector!!!!!!!!!!!! 여기서는 이것만 잘 기억해두면 된다. 
+
+    - css selector는 왜 중요한가?
+        - style을 원하는 태그에 정확하게 적용하기 위한 방법을 제공하기 때문이다. 
+        - css selector는 css에서만 사용하는 것이 아니라, 다른 곳에서도 사용 된다. 
+
+
+    - css-selector에서 많이 사용되는 기능
+        1. 태그 셀렉터: html, header 등 태그 이름을 통해서 사용하는 것이다. 
+            - * (전체 선택자): html 문서 내부의 모든 태그를 선택한다. 
+                - 사용법 : * {...}
+
+            - 태그 선택자 : 태그 이름으로 선택.
+                - 동일한 모든 태그에 전부 적용된다. 
+
+        2. id 셀렉터
+            - id 속성에 따라서 선택. 
+            - id 선택자는 앞에 '#' 이 붙는다.
+                - # id속성값 {
+                    ...
+                  } 
+            - id 속성은 html 페이지 전체에서 단 하나만 존재해야 한다. 
+
+        3. class 셀렉터 
+            - class 속성에 따라 선택한다. 
+                  - class는 '.'을 사용한다
+                    - .class속성값 {...}
+            - id와는 다르게 class속성은 중복 가능한 값을 가질 수 있다. 
+
+
+        4. 그룹선택자 
+            - 여러개의 선택자를 동시에 사용( 콤마로 구분한다)
+                  - 선택자, 선택자, 선택자{...}
+
+
+        5. 하위 선택자
+            - 태그들의 계층 구조를 이용해서 선택한다. 
+            - 공백을 통해 표현한다. 
+            - 사용법:
+                 ex) 상위 선택자 하위선택자 { ... }
+        6. 자식 선택자
+            - 바로 밑의 하위태그만 자식으로 인정하는 것. 
+                  
+
+
+
+
+
+    - BOX-MODEL
+        - html에서 태그를 통해 영역을 박스로 표현할 수 있다. 
+            - margin
+                  - margin-left
+                  - margin-right
+                  - margin-top
+                  - margin-bottom
+
+            - border
+                - border 기준으로 바깥족 여백을 margin 이라고 한다. 
+                - border 기준으로 안쪽 여백을 padding이라고 한다. 
+
+            - padding
+                  - padding-left
+                  - padding-right
+                  - padding-top
+                  - padding-bottom
+            - context */
+
+
+.column3 {
+    border: 2px solid rgb(81, 81, 153);
+    margin: 50px;
+    padding: 50px;
+}  

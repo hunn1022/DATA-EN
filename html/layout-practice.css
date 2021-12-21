@@ -1,0 +1,58 @@
+/* navigation bar 만들어보기 
+- ul을 이용해서 표현한다 
+    - li 태그들은 블록기반이 아닌 인라인기반으로 표현해줘야 한다. 
+    - display 속성을 통해 블록기반을 인라인 기반으로 변경해준다.
+    
+- position 
+    - 태그의 위치를 설정
+        1. static( default)
+            - 볼록이냐 인라인이냐에 따라 배치가 결정
+        2. relative
+        3. absolute
+        4. fixed
+    
+    */
+
+
+
+    header {
+        background-color: #006699;
+        color: #FFFFFF;
+    }
+    
+    .title {
+        display: inline;
+    }
+    
+    .list {
+        display: inline;
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        text-align: right;
+    }
+    
+    .list-item {
+        display: inline-block;
+        /* inline 속성은 너비 속성을 가지지 않습니다 */
+        /* inline-block은 inline 속성이면서, block 속성을 같이 사용 */
+        width: 300px;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+        /*-uppercase는 대문자로 변환하는 것이다.*/
+    .container {
+        position:relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    
+    .span {
+        position: absolute;
+        top: 50px;
+        left: 180px;
+    }
+
+/* display속성을 통해 inline속성을 블록기반으로도 변경할 수 있다. */
